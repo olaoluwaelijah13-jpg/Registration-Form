@@ -5,23 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
     <H1><em><U>Student Registration Form</U></em></H1>
-    <form action="/register" method="post">
-        <label for="Fullname">Full Name</label>
+    <form action="https://formspree.io/f/xaengall" method="post" div class="form-container">
+        <label for="Fullname">Full Name:</label>
         <input type="text" id="Full Name" name="Full Name" placeholder="Enter Your Full Name" required>
         <br>
         <br>
 
-        <label for="email">Email</label>
+        <label for="email">Email:</label>
         <input type="text" id="email" name="email" placeholder="Enter Your Email" required>
         <br>
         <br>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter Your Password">
+        <label for="course">Select Your Course:</label>
+        <br>
+        <input type="radio" id="Web Development" name="Course" value="Web Development">
+        <label for="Web Development">Web Development</label>
+        <br>
+
+        <input type="radio" id="Data Analysis" name="Course" value="Data Analysis">
+        <label for="Data Analysis">Data Analysis</label>
+        <br>
+
+        <input type="radio" id="UIUX Designs" name="Course" value="UIUX Designs">
+        <label for="UIUX Designs">UIUX Designs</label>
         <br>
         <br>
         <label>Gender:</label>
@@ -32,7 +44,7 @@
         <label for="female">Female</label>
         <br>
         <br>
-        <label for="country">Select Your Counry</label>
+        <label for="country">Select Your Country:</label>
         <select id="country" name="country">
             <option value="Nigeria">Nigeria</option>
             <option value="Ghana">Ghana</option>
